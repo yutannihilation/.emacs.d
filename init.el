@@ -67,6 +67,11 @@
 ;; Projectile ----------------------------------------------
 
 (counsel-projectile-mode)
+(setq projectile-indexing-method 'git)
+
+;; magit ---------------------------------------------------
+
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ;; Ess -----------------------------------------------------
 
