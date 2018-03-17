@@ -12,6 +12,7 @@
 (package-initialize)
 
 (setq pkgs '(ivy
+	     ivy-hydra
 	     counsel
 	     swiper
              company
