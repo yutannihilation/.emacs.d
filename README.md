@@ -6,3 +6,4 @@
 | Go To Function/File | <kbd>F2</kbd> | `xref-find-definitions-other-window` | <kbd>C-x 4 .</kbd> |
 | Restart R  | <kbd>Ctrl-Shift-F10</kbd> | `inferior-ess-reload` | <kbd>C-c C-e r</kbd> |
 | Load All   | <kbd>Ctrl-Shift-L</kbd>   | `ess-r-devtools-load-all` | <kbd>C-c C-w l</kbd> |
+| Run Selected Lines | <kbd>Ctrl-Enter</kbd> | `ess-eval-region-or-line-and-step` | <kbd>C-RET</kbd> |
