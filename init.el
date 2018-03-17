@@ -68,7 +68,10 @@
 ;; Projectile ----------------------------------------------
 
 (counsel-projectile-mode)
+
+;; ignore files that git ignores
 (setq projectile-indexing-method 'git)
+(setq projectile-use-git-grep t)
 
 ;; magit ---------------------------------------------------
 
