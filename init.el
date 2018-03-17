@@ -95,3 +95,6 @@
 ;; move custom to another file
 (setq custom-file "./custom.el")
 (load custom-file)
+
+;; do not create files with ~
+(setq make-backup-files nil)
