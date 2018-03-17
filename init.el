@@ -81,6 +81,9 @@
 ;; shut up and start R
 (setq ess-ask-for-ess-directory nil)
 
+;; set working dir
+(setq ess-r-package-library-path "...")
+
 ;; we are so young that _ no more means <-
 (ess-toggle-underscore nil)
 
@@ -107,3 +110,6 @@
 
 ;; do not create files with ~
 (setq make-backup-files nil)
+
+;; Use LF for line ending
+(setq default-buffer-file-coding-system 'utf-8-unix)
