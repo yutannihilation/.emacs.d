@@ -88,8 +88,16 @@
   ;; show help
   (define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
   ;; start R
-  (ess-request-a-process "Start R process" t))
+  (ess-request-a-process "Start R process" t)
+  ;; use TAB for completion
+  (define-key inferior-ess-mode-map (kbd "TAB") 'company-complete))
 (add-hook 'R-mode-hook 'R-mode-hooks)
+
+(defun inferior-ess-mode-hooks ()
+  ;; always use company-complete instead of completion-at-point
+  ;; See https://github.com/emacs-ess/ESS/blob/37b9fdc7383417643cabb6af9c39f037908403bf/lisp/ess-inf.el#L2008
+  (define-key inferior-ess-mode-map (kbd "TAB") 'company-complete))
+(add-hook 'inferior-ess-mode-hook 'inferior-ess-mode-hooks)
 
 ;; Others ------------------------------------------------
 
