@@ -93,6 +93,8 @@
 (defun R-mode-hooks ()
   ;; show help
   (define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
+  ;; set the working directory as the project root
+  (setq ess-startup-directory (projectile-project-root))
   ;; start R
   (ess-request-a-process "Start R process" t)
   ;; use TAB for completion
