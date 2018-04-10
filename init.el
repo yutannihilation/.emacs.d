@@ -84,6 +84,9 @@
 ;; set working dir
 (setq ess-r-package-library-path "...")
 
+;; set default indentation as the same as RStudio
+(setq ess-default-style 'RStudio)
+
 ;; we are so young that _ no more means <-
 (ess-toggle-underscore nil)
 
