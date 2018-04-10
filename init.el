@@ -23,7 +23,8 @@
              quickrun
              projectile
 	     counsel-projectile
-	     magit))
+	     magit
+	     yaml-mode))
 
 (require 'cl)
 ;; if there are any packages not yet installed, get package list and install it
