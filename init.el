@@ -62,10 +62,6 @@
 (setq ivy-use-virtual-buffers t)
 (global-set-key (kbd "C-s") 'swiper)
 
-;; use fuzzy matching
-(setq ivy-re-builders-alist
-      '((t . ivy--regex-fuzzy)))
-
 ;; Projectile ----------------------------------------------
 
 (counsel-projectile-mode)
