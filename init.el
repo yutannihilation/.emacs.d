@@ -118,3 +118,6 @@
 
 ;; Use LF for line ending
 (setq default-buffer-file-coding-system 'utf-8-unix)
+
+;; start server
+(server-start)
