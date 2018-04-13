@@ -24,6 +24,7 @@
              projectile
 	     counsel-projectile
 	     magit
+	     markdown-mode
 	     yaml-mode))
 
 (require 'cl)
@@ -106,6 +107,21 @@
   ;; See https://github.com/emacs-ess/ESS/blob/37b9fdc7383417643cabb6af9c39f037908403bf/lisp/ess-inf.el#L2008
   (define-key inferior-ess-mode-map (kbd "TAB") 'company-complete))
 (add-hook 'inferior-ess-mode-hook 'inferior-ess-mode-hooks)
+
+;; Markdown ----------------------------------------------
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.Rmd\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode"
+   "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+
+(setq markdown-command "/usr/local/bin/pandoc")
+
 
 ;; Others ------------------------------------------------
 
