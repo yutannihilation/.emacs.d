@@ -1,0 +1,17 @@
+;; fonts
+(set-default-font "...")
+;;(set-face-attribute 'default nil :height 125)
+
+;; set working dir
+(setq ess-r-package-library-path "...")
+
+;; specify the location of R
+(setq inferior-R-program-name "/path/to/R")
+
+;; path to pandoc for preview
+(setq markdown-command "/path/to/pandoc")
+
+;; Window size
+;; (setq default-frame-alist '((width . 140)
+;; 			    (height . 60)))
+

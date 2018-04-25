@@ -43,7 +43,6 @@
 ;; Theme --------------------------------------------------
 
 (load-theme 'dracula t)
-(set-default-font "Fira Code")
 
 ;; hide menu bar and tool bar
 (menu-bar-mode -1)
@@ -82,9 +81,6 @@
 ;; shut up and start R
 (setq ess-ask-for-ess-directory nil)
 
-;; set working dir
-(setq ess-r-package-library-path "...")
-
 ;; set default indentation as the same as RStudio
 (setq ess-default-style 'RStudio)
 
@@ -120,10 +116,10 @@
    "Major mode for editing GitHub Flavored Markdown files" t)
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 
-(setq markdown-command "/usr/local/bin/pandoc")
-
-
 ;; Others ------------------------------------------------
+
+;; load variables
+(load-file "~/.emacs.d/vars.el")
 
 ;; move custom to another file
 (setq custom-file "./custom.el")
