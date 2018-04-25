@@ -92,7 +92,7 @@
 (ess-toggle-underscore nil)
 
 (defun R-mode-hooks ()
-  ;; show help
+  ;; show help of the active candidate of completion
   (define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
   ;; set the working directory as the project root
   (setq ess-startup-directory (projectile-project-root))
