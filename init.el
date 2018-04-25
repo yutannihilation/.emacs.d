@@ -25,6 +25,7 @@
 	     counsel-projectile
 	     magit
 	     markdown-mode
+	     polymode
 	     yaml-mode))
 
 (require 'cl)
@@ -106,15 +107,16 @@
 
 ;; Markdown ----------------------------------------------
 
-(autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.Rmd\\'" . markdown-mode))
+;; polymode
+(require 'poly-R)
+(require 'poly-markdown)
 
-(autoload 'gfm-mode "markdown-mode"
-   "Major mode for editing GitHub Flavored Markdown files" t)
-(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+(add-to-list 'auto-mode-alist '("\\.md" . poly-markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+
+;; (autoload 'gfm-mode "markdown-mode"
+;;   "Major mode for editing GitHub Flavored Markdown files" t)
+;; (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 
 ;; Others ------------------------------------------------
 
