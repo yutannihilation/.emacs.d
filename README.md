@@ -12,4 +12,14 @@
 | Run Function Definition | <kbd>Ctrl-Alt-F</kbd>     | `ess-eval-region-or-function-or-paragraph` | <kbd>C-M-x</kbd>     |
 | Find in Files           | <kbd>Ctrl-Shift-F</kbd>   | `counsel-projectile-grep`                  | <kbd>C-c p s g</kbd> |
 
+## Tips
+
+### Environemntal variables
+
+While RStudio automatically cares R_LIBS_USER and PATH, we have to do it by ourselves with Emacs.
+
+``` ini
+R_LIBS_USER="~/R/library/"
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+```
 
