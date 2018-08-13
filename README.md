@@ -2,7 +2,7 @@
 
 | Description             | RStudio Keybind           | command                                    | ESS keybind          |
 |:------------------------|:--------------------------|:-------------------------------------------|:---------------------|
-| Show Function Help      | <kbd>F1</kbd>             | `ess-ess-display-help-on-object`           | <kbd>C-c C-v</kbd>   |
+| Show Function Help      | <kbd>F1</kbd>             | `ess-display-help-on-object`           | <kbd>C-c C-v</kbd>   |
 | Go To Function/File     | <kbd>F2</kbd>             | `xref-find-definitions`                    | <kbd>M-.</kbd>       |
 | Restart R               | <kbd>Ctrl-Shift-F10</kbd> | `inferior-ess-reload`                      | <kbd>C-c C-e r</kbd> |
 | Terminate R             | -                         | `ess-cleanup`                              | <kbd>C-c C-q</kbd>   |

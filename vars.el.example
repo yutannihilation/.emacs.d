@@ -8,6 +8,11 @@
 ;; specify the location of R
 (setq inferior-R-program-name "/path/to/R")
 
+;; On Windows msys64, maybe you need this
+;; (setenv "R_ENVIRON_USER" "c:/Users/user/Documents/.Renviron")
+;; (setenv "R_PROFILE_USER" "c:/Users/user/Documents/.Rprofile")
+;; (setenv "R_LIBS_USER" "c:/Users/user/Documents/R/win-library/3.5")
+
 ;; path to pandoc for preview
 (setq markdown-command "/path/to/pandoc")
 
