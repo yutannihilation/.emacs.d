@@ -26,7 +26,8 @@
 	     magit
 	     markdown-mode
 	     polymode
-	     yaml-mode))
+	     yaml-mode
+	     company-go))
 
 (require 'cl)
 ;; if there are any packages not yet installed, get package list and install it
@@ -36,6 +37,10 @@
 	(package-refresh-contents)
 	(dolist (pkg pkgs-not-yet-installed)
 	 (package-install pkg)))))
+
+;; Flycheck ----------------------------------------------
+
+(global-flycheck-mode)
 
 ;; Auto-Completion ----------------------------------------
 
@@ -104,6 +109,13 @@
   ;; See https://github.com/emacs-ess/ESS/blob/37b9fdc7383417643cabb6af9c39f037908403bf/lisp/ess-inf.el#L2008
   (define-key inferior-ess-mode-map (kbd "TAB") 'company-complete))
 (add-hook 'inferior-ess-mode-hook 'inferior-ess-mode-hooks)
+
+;; Go ---------------------------------------------------
+
+(require 'company-go)
+(add-hook 'go-mode-hook (lambda ()
+                          (set (make-local-variable 'company-backends) '(company-go))
+                          (company-mode)))
 
 ;; Markdown ----------------------------------------------
 
