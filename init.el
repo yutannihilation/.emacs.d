@@ -41,6 +41,9 @@
 ;; Flycheck ----------------------------------------------
 
 (global-flycheck-mode)
+;; enable go-flycheck
+(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
+(require 'go-flycheck)
 
 ;; Auto-Completion ----------------------------------------
 
@@ -113,9 +116,13 @@
 ;; Go ---------------------------------------------------
 
 (require 'company-go)
+;; Use company-mode only
 (add-hook 'go-mode-hook (lambda ()
                           (set (make-local-variable 'company-backends) '(company-go))
                           (company-mode)))
+;; fmt codes
+(add-hook 'before-save-hook 'gofmt-before-save)
+(setq gofmt-command "goimports")
 
 ;; Markdown ----------------------------------------------
 
