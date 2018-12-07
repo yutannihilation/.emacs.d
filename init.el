@@ -26,6 +26,8 @@
 	     magit
 	     markdown-mode
 	     polymode
+	     poly-markdown
+	     poly-R
 	     yaml-mode
 	     company-go))
 
