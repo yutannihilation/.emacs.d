@@ -3,6 +3,9 @@
 ;; moving to other window is frequent action when using ESS
 (define-key global-map (kbd "C-t") 'other-window)
 
+;; As of version 1.1, projectile requires users to define-key
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 ;; Packages ----------------------------------------------
 
 ;; setup repositories
