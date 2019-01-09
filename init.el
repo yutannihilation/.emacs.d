@@ -75,7 +75,7 @@
 (counsel-projectile-mode)
 
 ;; ignore files that git ignores
-(setq projectile-indexing-method 'git)
+(setq projectile-indexing-method 'hybrid)
 (setq projectile-use-git-grep t)
 
 ;; As of version 1.1, projectile requires users to define-key
