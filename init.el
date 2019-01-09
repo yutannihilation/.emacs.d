@@ -25,9 +25,6 @@
 	     counsel-projectile
 	     magit
 	     markdown-mode
-	     polymode
-	     poly-markdown
-	     poly-R
 	     yaml-mode
 	     company-go))
 
@@ -125,19 +122,6 @@
 ;; fmt codes
 (add-hook 'before-save-hook 'gofmt-before-save)
 (setq gofmt-command "goimports")
-
-;; Markdown ----------------------------------------------
-
-;; polymode
-(require 'poly-R)
-(require 'poly-markdown)
-
-(add-to-list 'auto-mode-alist '("\\.md" . poly-markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
-
-;; (autoload 'gfm-mode "markdown-mode"
-;;   "Major mode for editing GitHub Flavored Markdown files" t)
-;; (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 
 ;; Others ------------------------------------------------
 
