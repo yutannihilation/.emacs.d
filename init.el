@@ -40,9 +40,6 @@
 ;; Flycheck ----------------------------------------------
 
 (global-flycheck-mode)
-;; enable go-flycheck
-(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
-(require 'go-flycheck)
 
 ;; Auto-Completion ----------------------------------------
 
