@@ -7,6 +7,8 @@
 | Restart R               | <kbd>Ctrl-Shift-F10</kbd> | `inferior-ess-reload`                      | <kbd>C-c C-e r</kbd> |
 | Terminate R             | -                         | `ess-cleanup`                              | <kbd>C-c C-q</kbd>   |
 | Document                | <kbd>Ctrl-Shift-D</kbd>   | `ess-r-devtools-document-package`          | <kbd>C-c C-w d</kbd> |
+| Test Package            | <kbd>Ctrl-Shift-T</kbd>   | `ess-r-devtools-test-package`          | <kbd>C-c C-w t</kbd> |
+| Check Package           | <kbd>Ctrl-Shift-E</kbd>   | `ess-r-devtools-check-package`             | <kbd>C-c C-w c c</kbd> |
 | Load All                | <kbd>Ctrl-Shift-L</kbd>   | `ess-r-devtools-load-all`                  | <kbd>C-c C-w l</kbd> |
 | Run Selected Lines      | <kbd>Ctrl-Enter</kbd>     | `ess-eval-region-or-line-and-step`         | <kbd>C-RET</kbd>     |
 | Run Function Definition | <kbd>Ctrl-Alt-F</kbd>     | `ess-eval-region-or-function-or-paragraph` | <kbd>C-M-x</kbd>     |
