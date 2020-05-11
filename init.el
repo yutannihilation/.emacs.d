@@ -3,6 +3,9 @@
 ;; moving to other window is frequent action when using ESS
 (define-key global-map (kbd "C-t") 'other-window)
 
+;; Use command as control
+(setq mac-command-modifier 'control)
+
 ;; Packages ----------------------------------------------
 
 ;; setup repositories
